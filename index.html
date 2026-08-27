@@ -50,6 +50,7 @@ tr.alert{background:#fef2f2}tr.alert:hover{background:#fee2e2}
 <div class="btns">
 <button class="btn btn-avis" id="btnAvis" onclick="runAvis()">↻ Actualiser AVIS</button>
 <button class="btn btn-rank" id="btnRank" onclick="runRank()">📍 Classements</button>
+<button class="btn btn-rank" id="btnC3" onclick="runC3()">🗓 3 jours</button>
 </div></div>
 <div class="msg" id="msg"></div>
 <div class="wrap">
@@ -61,7 +62,7 @@ tr.alert{background:#fef2f2}tr.alert:hover{background:#fee2e2}
 <div class="stat"><div class="stat-lbl">Objectif +450</div><div class="stat-val" id="stObj">—</div><div class="objbar"><div class="objfill" id="objFill" style="width:0%"></div></div></div>
 </div>
 <div class="chartbox"><canvas id="chart" height="90"></canvas></div>
-<table><thead><tr><th>#</th><th>Fiche</th><th>Ville</th><th>Avis</th><th>⭐</th><th>Position</th><th>Objectif</th></tr></thead>
+<table><thead><tr><th>#</th><th>Fiche</th><th>Ville</th><th>Avis</th><th>⭐</th><th>Position</th><th>Objectif</th><th>J-2·J-1·J</th></tr></thead>
 <tbody id="tbody"></tbody></table>
 <div class="foot">R.Consulting · snapshot avis chaque nuit 3h UTC · classements auto lun &amp; jeu</div>
 </div>
@@ -144,7 +145,7 @@ function render(){
     const alertCls = (!pid || dropped) ? ' class="alert"' : '';
     return '<tr' + alertCls + '><td class="fcity">' + String(i+1).padStart(2,'0') + '</td>' +
       '<td><a class="fname" href="' + mapsUrl + '" target="_blank" rel="noopener">' + f.name + '</a></td>' +
-      '<td class="fcity">' + f.city + '</td><td>' + avisCell + '</td><td>' + star + '</td><td>' + posCell + '</td><td>' + objCell + '</td>' + '</tr>';
+      '<td class="fcity">' + f.city + '</td><td>' + avisCell + '</td><td>' + star + '</td><td>' + posCell + '</td><td>' + objCell + '</td>' + c3cell(f.name) + '</tr>';
   }).join('');
 
   $('tbody').innerHTML = rows;
@@ -204,4 +205,35 @@ async function runRank(){
 }
 
 load();
+
+let C3=null,C3DAYS=null;
+function c3cell(name){
+  if(!C3)return '<td class="fcity">—</td>';
+  const c=C3[name];
+  if(!c)return '<td class="fcity">—</td>';
+  if(c.err)return '<td class="fcity" title="'+c.err+'">⚠</td>';
+  const f=v=>v>0?'<b>'+v+'</b>':'<span style="color:#c9ccd2">0</span>';
+  return '<td style="font-family:\'DM Mono\',monospace;font-size:.72rem;white-space:nowrap">'+f(c.j2)+' · '+f(c.j1)+' · '+f(c.j0)+'</td>';
+}
+async function runC3(){
+  const b=$('btnC3');b.disabled=true;
+  C3={};
+  const NN=DATA.fiches?DATA.fiches.length:0;
+  let t0=0,t1=0,t2=0;
+  for(let s=0;s<NN;s+=3){
+    msg('Comptage 3 jours — fiches '+(s+1)+'–'+Math.min(s+3,NN)+' / '+NN+'…');
+    try{
+      const r=await fetch('/.netlify/functions/count3j?start='+s+'&n=3');
+      const j=await r.json();C3DAYS=j.days;
+      for(const k in j.results){
+        C3[k]=j.results[k];
+        const c=j.results[k];
+        if(!c.err){t0+=c.j0;t1+=c.j1;t2+=c.j2;}
+      }
+      render();
+    }catch(e){}
+  }
+  msg('3 jours ✓ — avant-hier '+t2+' · hier '+t1+' · aujourd\'hui '+t0+' (avis visibles sur Google)');
+  b.disabled=false;
+}
 </script></body></html>
