@@ -1,0 +1,74 @@
+[
+ {
+  "name": "Pro Toiturier Waterloo",
+  "q": "pro toiturier waterloo",
+  "target": "pro toiturier waterloo",
+  "ll": "50.7150,4.3990",
+  "kw": "toiturier waterloo",
+  "city": "Waterloo",
+  "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20waterloo",
+  "obj": 100,
+  "base": 0,
+  "region": "Belgique"
+ },
+ {
+  "name": "Pro Toiturier Uccle",
+  "q": "pro toiturier uccle",
+  "target": "pro toiturier uccle",
+  "ll": "50.8020,4.3370",
+  "kw": "toiturier uccle",
+  "city": "Uccle",
+  "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20uccle",
+  "obj": 100,
+  "base": 0,
+  "region": "Belgique"
+ },
+ {
+  "name": "Pro Toiturier Watermael-Boitsfort",
+  "q": "pro toiture watermael boitsort",
+  "target": "pro toiture watermael",
+  "ll": "50.8096,4.4025",
+  "kw": "toiturier watermael-boitsfort",
+  "city": "Watermael-Boitsfort",
+  "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiture%20watermael%20boitsort",
+  "obj": 100,
+  "base": 53,
+  "region": "Belgique"
+ },
+ {
+  "name": "Pro Toiturier Woluwe-Saint-Pierre",
+  "q": "pro toiturier woluwe saint pierre",
+  "target": "pro toiturier woluwe saint pierre",
+  "ll": "50.8402,4.4361",
+  "kw": "toiturier woluwe-saint-pierre",
+  "city": "Woluwe-Saint-Pierre",
+  "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20woluwe%20saint%20pierre",
+  "obj": 50,
+  "base": 0,
+  "region": "Belgique"
+ },
+ {
+  "name": "Pro Toiturier Woluwe-Saint-Lambert",
+  "q": "pro toiturier woluwe saint lambert",
+  "target": "pro toiturier woluwe saint lambert",
+  "ll": "50.8467,4.4270",
+  "kw": "toiturier woluwe-saint-lambert",
+  "city": "Woluwe-Saint-Lambert",
+  "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20woluwe%20saint%20lambert",
+  "obj": 50,
+  "base": 0,
+  "region": "Belgique"
+ },
+ {
+  "name": "Toiturier Rixensart",
+  "q": "toiturier rixensart pro",
+  "target": "toiturier rixensart",
+  "ll": "50.7130,4.5210",
+  "kw": "toiturier rixensart",
+  "city": "Rixensart",
+  "link": "https://www.google.com/maps/search/?api=1&query=toiturier%20rixensart%20pro",
+  "obj": 50,
+  "base": 0,
+  "region": "Belgique"
+ }
+]
