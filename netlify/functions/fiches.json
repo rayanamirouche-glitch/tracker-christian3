@@ -8,7 +8,7 @@
   "city": "Waterloo",
   "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20waterloo",
   "obj": 100,
-  "base": 0,
+  "base": 11,
   "region": "Belgique"
  },
  {
@@ -20,7 +20,7 @@
   "city": "Uccle",
   "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20uccle",
   "obj": 100,
-  "base": 0,
+  "base": 19,
   "region": "Belgique"
  },
  {
@@ -44,7 +44,7 @@
   "city": "Woluwe-Saint-Pierre",
   "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20woluwe%20saint%20pierre",
   "obj": 50,
-  "base": 27,
+  "base": 7,
   "region": "Belgique"
  },
  {
@@ -56,7 +56,7 @@
   "city": "Woluwe-Saint-Lambert",
   "link": "https://www.google.com/maps/search/?api=1&query=pro%20toiturier%20woluwe%20saint%20lambert",
   "obj": 50,
-  "base": 0,
+  "base": 10,
   "region": "Belgique"
  },
  {

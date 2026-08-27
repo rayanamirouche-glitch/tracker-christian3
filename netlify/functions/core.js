@@ -86,7 +86,7 @@ async function snapAvisWave(start) {
   const base = await getJSON('base', {});
   let newBase = false;
   for (const f of wave) {
-    if (base[f.name] == null && typeof f.base === 'number') { base[f.name] = f.base; newBase = true; }
+    if (typeof f.base === 'number' && base[f.name] !== f.base) { base[f.name] = f.base; newBase = true; }
   }
   if (newBase) await setJSON('base', base);
   return hist[today()];
