@@ -1,8 +1,10 @@
 [functions]
   node_bundler = "esbuild"
 
+# Releve quotidien : "*/2" ne tournait que les jours impairs, donc rien le 28,
+# le 30, etc. — le tracker paraissait fige un jour sur deux. 7 fiches = 210 appels/mois.
 [functions."snapshot_avis"]
-  schedule = "0 3 */2 * *"
+  schedule = "0 3 * * *"
 
 [functions."snapshot_rank"]
   schedule = "12 6 * * 1,4"
