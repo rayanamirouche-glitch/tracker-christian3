@@ -70,5 +70,17 @@
   "obj": 50,
   "base": 0,
   "region": "Belgique"
+ },
+ {
+  "name": "Pro Toiture Ixelles - Pro Toiturier",
+  "q": "Pro Toiture Ixelles Pro Toiturier",
+  "target": "pro toiture ixelles",
+  "ll": "50.8285,4.3810",
+  "kw": "toiturier ixelles",
+  "city": "Ixelles",
+  "link": "https://maps.app.goo.gl/GconZgHqdGmNxhfe8",
+  "obj": 50,
+  "base": 0,
+  "region": "Belgique"
  }
 ]
