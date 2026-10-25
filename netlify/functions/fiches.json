@@ -9,7 +9,9 @@
   "link": "https://maps.app.goo.gl/eQABQnDXpGr1CkRA9",
   "obj": 100,
   "base": 11,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11zddy25sm",
+  "cid": "15704730859889192937"
  },
  {
   "name": "Pro Toiturier Uccle",
@@ -21,7 +23,9 @@
   "link": "https://maps.app.goo.gl/P39x3Bb9rwNy7N4j9",
   "obj": 100,
   "base": 19,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11ntpf0j3c",
+  "cid": "2309193330929077554"
  },
  {
   "name": "Pro Toiturier Watermael-Boitsfort",
@@ -33,7 +37,9 @@
   "link": "https://maps.app.goo.gl/VBEBzTZKnCHB9TQ29",
   "obj": 100,
   "base": 53,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11vxyzfs4n",
+  "cid": "2832373720985513267"
  },
  {
   "name": "Pro Toiturier Woluwe-Saint-Pierre",
@@ -45,7 +51,9 @@
   "link": "https://maps.app.goo.gl/htQjdutWCAbzYEfX9",
   "obj": 50,
   "base": 7,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11zkxvpw8h",
+  "cid": "14673266154377938879"
  },
  {
   "name": "Pro Toiturier Woluwe-Saint-Lambert",
@@ -57,7 +65,9 @@
   "link": "https://maps.app.goo.gl/F1rtspyoNn9zGfyo8",
   "obj": 50,
   "base": 10,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11zhb5t17l",
+  "cid": "11974807880444554621"
  },
  {
   "name": "Toiturier Rixensart",
@@ -69,7 +79,9 @@
   "link": "https://maps.app.goo.gl/WUkkrziGnYHDP6Yf9",
   "obj": 50,
   "base": 0,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11zh9zz9bh",
+  "cid": "7865729938953622147"
  },
  {
   "name": "Pro Toiture Ixelles - Pro Toiturier",
@@ -81,6 +93,8 @@
   "link": "https://maps.app.goo.gl/GconZgHqdGmNxhfe8",
   "obj": 50,
   "base": 36,
-  "region": "Belgique"
+  "region": "Belgique",
+  "kg": "/g/11vxmvvdkj",
+  "cid": "11735478923267891984"
  }
 ]
